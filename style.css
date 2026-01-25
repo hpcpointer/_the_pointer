@@ -1,44 +1,149 @@
+/* ---------- Root Colors ---------- */
+:root {
+  --navy: #1f2a44;
+}
+
+/* ---------- Base ---------- */
 body {
+  font-family: 'Courier New', Courier, monospace;
+  background: #f4f2ed;
+  color: #1b1b1b;
+  margin: 0;
+  line-height: 1.6;
+  
+}
+
+.social-container {
+  text-align: center;  /* centers inline or inline-block elements inside */
+  margin: 2rem 0;      /* optional spacing above/below */
+}
+
+
+.instagram-btn {
+  display: inline-block;
+  padding: 1rem 2rem;         /* button size */
+  background: var(--navy);      /* navy background */
+  color: white;                  /* white text */
+  text-decoration: none;         /* no underline */
   font-family: Georgia, "Times New Roman", serif;
-  background: #f5f3ee;
-  color: #1a1a1a;
-  margin: 0;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: 5px solid white;      /* subtle white border */
+  border-radius: 5px;           /* slightly rounded corners */
+  transition: all 0.2s ease;    /* smooth hover effect */
 }
 
+.instagram-btn:hover {
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
+}
+
+
+/* ---------- Navigation ---------- */
+nav ul {
+  display: flex;
+  justify-content: space-evenly; /* evenly spaced across the page */
+  margin: 1rem 0 2rem;
+  padding: 10px 0;
+  list-style: none;
+  background: var(--navy);        /* navy background */
+}
+
+nav a {
+  text-decoration: none;
+  color: white;                    /* white text */
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+}
+
+nav a:hover {
+  text-decoration: underline;      /* subtle hover effect */
+}
+
+html {
+  scroll-behavior: smooth;         /* smooth scrolling for anchor links */
+}
+
+/* ---------- Header ---------- */
 header {
-  border-bottom: 4px solid #1a1a1a;
-  padding: 1.5rem;
+  padding: 2rem 1rem 1.2rem;
   text-align: center;
+  background: #f8f7f4;
 }
 
-h1 {
-  font-size: 3rem;
+header h1 {
+  font-size: 3.2rem;
   margin: 0;
-  letter-spacing: -1px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+  color: var(--navy);
 }
 
+header p {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* ---------- Layout ---------- */
 main {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.2rem;
 }
 
+/* ---------- Sections ---------- */
 section {
-  border-bottom: 1px dashed #999;
+  margin-bottom: 2.5rem;
   padding-bottom: 1.5rem;
-  margin-bottom: 2rem;
+  border-bottom: 1px dashed #777;
 }
 
+section h2 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 0.6rem;
+  border-left: 6px solid var(--navy);
+  padding-left: 0.6rem;
+  color: var(--navy);
+}
+
+/* ---------- Featured ---------- */
 .featured {
-  background: #e8e4dc;
-  padding: 1.5rem;
-  border: 2px solid #1a1a1a;
+  background: #e6e2d8;
+  padding: 1.8rem;
+  border: 3px solid var(--navy);
+  box-shadow: 6px 6px 0 var(--navy);
 }
 
+.featured h2 {
+  border-left: none;
+  padding-left: 0;
+  font-size: 2.1rem;
+  opacity: 0.8;
+}
+
+.featured h3 {
+  font-size: 1.8rem;
+  margin: 0.4rem 0 0.6rem;
+}
+
+/* ---------- Text ---------- */
+p {
+  margin: 0.4rem 0 0;
+}
+
+/* ---------- Footer ---------- */
 footer {
   text-align: center;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   opacity: 0.7;
-  padding: 1rem;
+  padding: 1.2rem;
+  border-top: 2px solid var(--navy);
+  background: #f8f7f4;
 }
-
