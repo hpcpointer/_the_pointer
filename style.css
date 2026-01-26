@@ -73,20 +73,45 @@ header {
   background: #f8f7f4;
 }
 
-/* ---------- Banner ---------- */
-.banner { 
-  width: 100%;          /* spans full page width */
-  height: 140px;        /* controls banner height */
-  overflow: hidden;     /* hides any part of the image outside the container */
+
+/* Banner container */
+.banner {
+  position: relative;       /* allows text to overlay */
+  width: 100%;
+  height: 200px;            /* bigger banner now */
+  overflow: hidden;
 }
 
+/* Banner image */
 .banner img {
-  width: 100%;          /* makes image fill container width */
-  height: 100%;         /* makes image fill container height */
-  object-fit: cover;    /* crops image to fill container without distortion */
-  object-position: center bottom; /* shows the lower half of the image */
-  display: block;       /* removes any default inline spacing */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom; /* shows lower half */
+  display: block;
 }
+
+/* Text overlay */
+.banner-text {
+  position: absolute;       /* positions text on top of image */
+  top: 50%;                 /* vertically center */
+  left: 50%;                /* horizontally center */
+  transform: translate(-50%, -50%); /* exact center */
+  text-align: center;
+  color: white;             /* stands out on image */
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* improves readability */
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.banner-text p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
 
 
 
