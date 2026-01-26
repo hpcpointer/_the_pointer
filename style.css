@@ -151,5 +151,6 @@ footer {
   opacity: 0.7;
   padding: 1.2rem;
   border-top: 2px solid var(--navy);
-  backgro
+ background: #f8f7f4;   /* light background color */
+}
 
