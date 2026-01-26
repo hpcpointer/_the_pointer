@@ -10,128 +10,82 @@ body {
   color: #1b1b1b;
   margin: 0;
   line-height: 1.6;
-  
 }
 
-.social-container {
-  text-align: center;  /* centers inline or inline-block elements inside */
-  margin: 2rem 0;      /* optional spacing above/below */
+html {
+  scroll-behavior: smooth;
 }
 
-
-.instagram-btn {
-  display: inline-block;
-  padding: 1rem 2rem;         /* button size */
-  background: var(--navy);      /* navy background */
-  color: white;                  /* white text */
-  text-decoration: none;         /* no underline */
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-  border: 5px solid white;      /* subtle white border */
-  border-radius: 5px;           /* slightly rounded corners */
-  transition: all 0.2s ease;    /* smooth hover effect */
+/* ---------- Banner ---------- */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 250px;            /* bigger banner for impact */
+  overflow: hidden;
 }
 
-.instagram-btn:hover {
-  background: white;
-  color: var(--navy);
-  cursor: pointer;
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center bottom;
+  display: block;
+  z-index: 1;
 }
 
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white !important;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 3rem;
+  color: white !important;
+}
+
+.banner-text p {
+  margin: 0;
+  font-size: 1.3rem;
+  color: white !important;
+}
+
+/* ---------- Header ---------- */
+header {
+  padding: 0;
+  text-align: center;
+  background: #f8f7f4;
+}
 
 /* ---------- Navigation ---------- */
 nav ul {
   display: flex;
-  justify-content: space-evenly; /* evenly spaced across the page */
-  margin: 1rem 0 2rem;
+  justify-content: space-evenly;
+  margin: 0;
   padding: 10px 0;
   list-style: none;
-  background: var(--navy);        /* navy background */
+  background: var(--navy);
 }
 
 nav a {
   text-decoration: none;
-  color: white;                    /* white text */
+  color: white;
   font-family: Georgia, "Times New Roman", serif;
   font-weight: normal;
   letter-spacing: 0.5px;
 }
 
 nav a:hover {
-  text-decoration: underline;      /* subtle hover effect */
+  text-decoration: underline;
 }
 
-html {
-  scroll-behavior: smooth;         /* smooth scrolling for anchor links */
-}
-
-/* ---------- Header ---------- */
-header {
-  padding: 2rem 1rem 1.2rem;
-  text-align: center;
-  background: #f8f7f4;
-}
-
-
-/* Banner container */
-.banner {
-  position: relative;       /* allows text to overlay */
-  width: 100%;
-  height: 200px;            /* bigger banner now */
-  overflow: hidden;
-}
-
-/* Banner image */
-.banner img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center bottom; /* shows lower half */
-  display: block;
-}
-
-/* Text overlay */
-.banner-text {
-  position: absolute;       /* positions text on top of image */
-  top: 50%;                 /* vertically center */
-  left: 50%;                /* horizontally center */
-  transform: translate(-50%, -50%); /* exact center */
-  text-align: center;
-  color: white;             /* stands out on image */
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.7); /* improves readability */
-}
-
-.banner-text h1 {
-  margin: 0;
-  font-size: 2.2rem;
-}
-
-.banner-text p {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-
-
-
-header h1 {
-  font-size: 3.2rem;
-  margin: 0;
-  letter-spacing: -1.5px;
-  text-transform: uppercase;
-  color: var(--navy);
-}
-
-header p {
-  margin-top: 0.3rem;
-  font-size: 0.95rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  opacity: 0.75;
-}
-
-/* ---------- Layout ---------- */
+/* ---------- Main Content ---------- */
 main {
   max-width: 900px;
   margin: 2.5rem auto;
@@ -155,31 +109,6 @@ section h2 {
   color: var(--navy);
 }
 
-/* ---------- Featured ---------- */
-.featured {
-  background: #e6e2d8;
-  padding: 1.8rem;
-  border: 3px solid var(--navy);
-  box-shadow: 6px 6px 0 var(--navy);
-}
-
-.featured h2 {
-  border-left: none;
-  padding-left: 0;
-  font-size: 2.1rem;
-  opacity: 0.8;
-}
-
-.featured h3 {
-  font-size: 1.8rem;
-  margin: 0.4rem 0 0.6rem;
-}
-
-/* ---------- Text ---------- */
-p {
-  margin: 0.4rem 0 0;
-}
-
 /* ---------- Footer ---------- */
 footer {
   text-align: center;
@@ -187,5 +116,5 @@ footer {
   opacity: 0.7;
   padding: 1.2rem;
   border-top: 2px solid var(--navy);
-  background: #f8f7f4;
-}
+  backgro
+
