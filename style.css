@@ -73,6 +73,27 @@ header {
   background: #f8f7f4;
 }
 
+.instagram-btn {
+  display: inline-block;
+  padding: 1rem 2rem;         /* button size */
+  background: var(--navy);      /* navy background */
+  color: white;                  /* white text */
+  text-decoration: none;         /* no underline */
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  border: 5px solid white;      /* subtle white border */
+  border-radius: 5px;           /* slightly rounded corners */
+  transition: all 0.2s ease;    /* smooth hover effect */
+}
+
+.instagram-btn:hover {
+  background: white;
+  color: var(--navy);
+  cursor: pointer;
+}
+
+
 /* ---------- Navigation ---------- */
 nav ul {
   display: flex;
