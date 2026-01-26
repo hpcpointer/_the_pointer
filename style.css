@@ -39,9 +39,13 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white !important;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
   z-index: 2;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+
+  background-color: rgba(0, 0, 0, 0.6); /* semi-opaque black */
+  padding: 0.5rem 1rem;                 /* adds spacing around text */
+  border-radius: 8px;                   /* optional rounded corners */
 }
 
 .banner-text h1 {
