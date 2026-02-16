@@ -53,6 +53,7 @@ header {
   border: 5px solid white;      /* subtle white border */
   border-radius: 5px;           /* slightly rounded corners */
   transition: all 0.2s ease;    /* smooth hover effect */
+  text-align: center; 
 }
 
 .instagram-btn:hover {
