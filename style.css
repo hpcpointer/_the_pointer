@@ -43,7 +43,7 @@ header {
 
 .instagram-btn {
   display: block;
-  padding: 1rem 2rem;         /* button size */
+  padding: 2inch 4inch;         /* button size */
   background: var(--navy);      /* navy background */
   color: white;                  /* white text */
   text-decoration: none;         /* no underline */
