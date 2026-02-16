@@ -121,10 +121,116 @@ section h2 {
   gap: 40px;
 }
 
-.special-column {
-  background: #f4f4f4;
-  padding: 20px;
-  border-left: 4px solid black;
+/* ============================= */
+/*        BISON EXCLUSIVE        */
+/* ============================= */
+
+#bison-exclusive {
+  max-width: 1100px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+/* Each subsection block */
+#bison-exclusive .layout {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 100px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid #e5e5e5; /* subtle divider */
+}
+
+/* Remove divider from last section */
+#bison-exclusive .layout:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* ============================= */
+/*           MAIN AREA           */
+/* ============================= */
+
+#bison-exclusive main {
+  flex: 3;
+  font-size: 18px;
+  line-height: 1.75;
+}
+
+/* Section labels (Question of the Week, Class Column, etc.) */
+#bison-exclusive .section-label {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #002244; /* Bison Blue */
+  margin-bottom: 14px;
+}
+
+/* Headlines */
+#bison-exclusive h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+#bison-exclusive h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 22px;
+  margin-bottom: 8px;
+}
+
+/* Paragraph spacing */
+#bison-exclusive p {
+  margin-bottom: 18px;
+}
+
+/* ============================= */
+/*          SIDEBAR              */
+/* ============================= */
+
+#bison-exclusive .special-column {
+  flex: 1;
+  padding: 28px;
+  background-color: #f4f4f4;
+  border-left: 4px solid #002244;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+#bison-exclusive .special-column strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+/* ============================= */
+/*         RESPONSIVE            */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  #bison-exclusive .layout {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #bison-exclusive main {
+    font-size: 17px;
+  }
+
+  #bison-exclusive h1 {
+    font-size: 26px;
+  }
+
+  #bison-exclusive .special-column {
+    border-left: none;
+    border-top: 4px solid #002244;
+    margin-top: 10px;
+  }
+}
+
 }
 
 
