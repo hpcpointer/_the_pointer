@@ -42,7 +42,7 @@ header {
 }
 
 .instagram-btn {
-  display: inline-block;
+  display: block;
   padding: 1rem 2rem;         /* button size */
   background: var(--navy);      /* navy background */
   color: white;                  /* white text */
