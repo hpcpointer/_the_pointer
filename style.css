@@ -135,18 +135,16 @@ section h2 {
 /* ============================= */
 
 #bison-exclusive {
-  max-width: 1100px;
+  max-width: 750px;
   margin: 80px auto;
   padding: 0 20px;
 }
 
 /* Each subsection block */
 #bison-exclusive .layout {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 100px;
-  padding-bottom: 60px;
-  border-bottom: 1px solid #e5e5e5; /* subtle divider */
+  margin-bottom: 80px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid var(--navy);
 }
 
 /* Remove divider from last section */
@@ -154,6 +152,46 @@ section h2 {
   border-bottom: none;
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+/* Headings */
+#bison-exclusive h2 {
+  font-size: 1.9rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+/* Paragraph styling for long writing */
+#bison-exclusive p {
+  font-size: 1.08rem;
+  line-height: 1.75;
+  margin-bottom: 18px;
+}
+
+/* ============================= */
+/*        MOBILE ADJUSTMENTS     */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  #bison-exclusive {
+    margin: 50px auto;
+    padding: 0 16px;
+  }
+
+  #bison-exclusive .layout {
+    margin-bottom: 60px;
+    padding-bottom: 35px;
+  }
+
+  #bison-exclusive h2 {
+    font-size: 1.5rem;
+  }
+
+  #bison-exclusive p {
+    font-size: 1rem;
+    line-height: 1.65;
+  }
 }
 
 /* ============================= */
