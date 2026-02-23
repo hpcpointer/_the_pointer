@@ -159,12 +159,6 @@ section h2 {
 /*        BISON EXCLUSIVE        */
 /* ============================= */
 
-/* Section Background */
-#bison-exclusive {
-  background-color: #f7f9fc;   /* soft cool tint */
-  padding: 100px 20px;
-}
-
 /* Article Layout Card */
 #bison-exclusive .layout {
   display: flex;
