@@ -66,11 +66,20 @@ header {
 /* ---------- Navigation ---------- */
 nav ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: 0;
-  padding: 10px 0;
+  padding: 0;
   list-style: none;
   background: var(--navy);
+}
+
+nav li {
+  padding: 12px 25px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+nav li:last-child {
+  border-right: none;
 }
 
 nav a {
