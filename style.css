@@ -94,6 +94,31 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* ============================= */
+/*        MOBILE NAV FIX         */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-wrap: wrap;          /* allows items to move to next line */
+  }
+
+  nav li {
+    padding: 10px 15px;       /* slightly smaller padding */
+    border-right: none;       /* remove vertical lines on wrap */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  nav a {
+    font-size: 0.95rem;       /* slightly smaller text */
+  }
+}
+
 /* ---------- Main Content ---------- */
 main {
   max-width: 900px;
